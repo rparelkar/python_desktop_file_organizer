@@ -1,3 +1,7 @@
+# TODO
+# add chronology or alphabetical ordering in file later
+# is watchdog necessary? can we look at substitutes
+
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
@@ -30,8 +34,8 @@ folder_destination_images = "/Users/Rahul/Desktop/organizedDesktop/images"
 folder_destination_screenshots = "/Users/Rahul/Desktop/organizedDesktop/screenshots"
 folder_destination_others = "/Users/Rahul/Desktop/organizedDesktop/others"
 
-doc_file_types = (".pdf", ".doc", ".docx", ".txt")
-image_file_types = (".jpeg", ".png", ".jpg", ".tiff", ".bmp", ".gif")
+doc_file_types = (".pdf", ".doc", ".docx", ".txt") # restricting to only certain files?
+image_file_types = (".jpeg", ".png", ".jpg", ".tiff", ".bmp", ".gif") # may update later
 
 def docFile(fileName):
     if fileName.casefold().endswith(doc_file_types):
